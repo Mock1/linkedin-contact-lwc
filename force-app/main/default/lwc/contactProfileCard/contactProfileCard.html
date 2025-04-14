@@ -11,7 +11,7 @@
             <div class="slds-media slds-media_center slds-has-flexi-truncate">
                 <div class="slds-media__figure">
                     <lightning-avatar
-                        src={contact.Avatar__c}
+                        src={avatar}
                         fallback-icon-name="standard:user"
                         size="large"
                         variant="circle">
@@ -19,15 +19,15 @@
                 </div>
                 <div class="slds-media__body">
                     <h2 class="slds-card__header-title">
-                        <span class="slds-text-heading_medium">{contact.Name}</span>
+                        <span class="slds-text-heading_medium">{name}</span>
                     </h2>
                     <p class="slds-text-body_regular slds-line-height_reset">
-                        <span class="slds-text-color_weak">{contact.Title}</span>
+                        <span class="slds-text-color_weak">{title}</span>
                     </p>
                     <p class="slds-text-body_regular slds-line-height_reset">
                         <lightning-formatted-url
-                            value={contact.Account?.Id}
-                            label={contact.Account?.Name}
+                            value={account.Id}
+                            label={account.Name}
                             target="_blank">
                         </lightning-formatted-url>
                     </p>
