@@ -1,11 +1,20 @@
-.profile-avatar {
-    --sds-c-avatar-sizing-border: 3px !important;
-    --sds-c-avatar-color-background: #f3f2f2 !important;
-    --sds-c-avatar-radius-border: 50% !important;
-    width: 120px !important;
-    height: 120px !important;
-    min-width: 120px !important;
-    min-height: 120px !important;
+.avatar-container {
+    width: 120px;
+    height: 120px;
+    position: relative;
+}
+
+.avatar-container lightning-avatar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.avatar-container lightning-avatar::part(avatar) {
+    width: 100%;
+    height: 100%;
 }
 
 .slds-card {
