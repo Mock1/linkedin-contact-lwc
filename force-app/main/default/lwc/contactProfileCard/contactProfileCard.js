@@ -2,7 +2,7 @@ import { LightningElement, api, wire } from 'lwc';
 import { getRecord, getFieldValue } from 'lightning/uiRecordApi';
 import NAME_FIELD from '@salesforce/schema/Contact.Name';
 import TITLE_FIELD from '@salesforce/schema/Contact.Title';
-import AVATAR_FIELD from '@salesforce/schema/Contact.Avatar';
+import AVATAR_FIELD from '@salesforce/schema/Contact.Avatar__c';
 import ACCOUNT_ID_FIELD from '@salesforce/schema/Contact.AccountId';
 import ACCOUNT_NAME_FIELD from '@salesforce/schema/Contact.Account.Name';
 
