@@ -10,13 +10,13 @@
         <div class="slds-card__body slds-card__body_inner">
             <div class="slds-grid slds-gutters">
                 <!-- Avatar Section -->
-                <div class="slds-col slds-size_1-of-4">
-                    <div class="avatar-container">
+                <div class="slds-col slds-size_1-of-4 slds-align_absolute-center">
+                    <div class="avatar-container slds-m-bottom_medium">
                         <template if:true={avatar}>
                             <img src={avatar} alt="Profile" class="avatar-image" />
                         </template>
                         <template if:false={avatar}>
-                            <div class="avatar-fallback">
+                            <div class="avatar-fallback slds-align_absolute-center">
                                 <lightning-icon icon-name="standard:user" size="large" class="fallback-icon"></lightning-icon>
                             </div>
                         </template>
