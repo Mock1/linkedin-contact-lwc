@@ -3,14 +3,14 @@ import { getRecord, getFieldValue } from 'lightning/uiRecordApi';
 import NAME_FIELD from '@salesforce/schema/Contact.Name';
 import TITLE_FIELD from '@salesforce/schema/Contact.Title';
 import AVATAR_FIELD from '@salesforce/schema/Contact.Avatar__c';
-import ACCOUNT_FIELD from '@salesforce/schema/Contact.Account';
+import ACCOUNT_ID_FIELD from '@salesforce/schema/Contact.AccountId';
 import ACCOUNT_NAME_FIELD from '@salesforce/schema/Contact.Account.Name';
 
 const FIELDS = [
     NAME_FIELD,
     TITLE_FIELD,
     AVATAR_FIELD,
-    ACCOUNT_FIELD,
+    ACCOUNT_ID_FIELD,
     ACCOUNT_NAME_FIELD
 ];
 
@@ -34,7 +34,7 @@ export default class ContactProfileCard extends LightningElement {
 
     get account() {
         return {
-            Id: getFieldValue(this.contact.data, ACCOUNT_FIELD),
+            Id: getFieldValue(this.contact.data, ACCOUNT_ID_FIELD),
             Name: getFieldValue(this.contact.data, ACCOUNT_NAME_FIELD)
         };
     }
