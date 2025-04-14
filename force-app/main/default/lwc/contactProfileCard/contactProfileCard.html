@@ -11,13 +11,15 @@
             <div class="slds-grid slds-gutters">
                 <!-- Avatar Section -->
                 <div class="slds-col slds-size_1-of-4">
-                    <div class="slds-align_absolute-center avatar-container">
-                        <lightning-avatar
-                            src={avatar}
-                            fallback-icon-name="standard:user"
-                            size="large"
-                            variant="circle">
-                        </lightning-avatar>
+                    <div class="avatar-container">
+                        <template if:true={avatar}>
+                            <img src={avatar} alt="Profile" class="avatar-image" />
+                        </template>
+                        <template if:false={avatar}>
+                            <div class="avatar-fallback">
+                                <lightning-icon icon-name="standard:user" size="large" class="fallback-icon"></lightning-icon>
+                            </div>
+                        </template>
                     </div>
                 </div>
                 
