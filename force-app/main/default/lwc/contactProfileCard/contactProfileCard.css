@@ -23,9 +23,9 @@
 }
 
 .avatar-fallback svg {
-    width: 60%;
-    height: 60%;
-    fill: #706e6b;
+    width: 7.5rem;
+    height: 7.5rem;
+    fill: var(--slds-c-icon-color-foreground, var(--sds-c-icon-color-foreground, var(--slds-g-color-neutral-base-100, var(--lwc-colorTextIconInverse, rgb(255, 255, 255)))));
 }
 
 .slds-card {
